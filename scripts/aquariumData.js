@@ -56,5 +56,43 @@ export const database = {
             diet: "Omnivore",
             image: "https://static.wixstatic.com/media/a24a53_a96c116b2d9b45fe817afafcbea97d7e~mv2.jpg/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a24a53_a96c116b2d9b45fe817afafcbea97d7e~mv2.jpg"
         },
+    ],
+
+    tips: [
+        {
+            topic: "Water Temperature",
+            text: "Maintain a consistent water temperature between 75-80°F (24-27°C) for most tropical fish."
+        },
+        {
+            topic: "Determine Your Setup",
+            text: "Use the largest tank practical for your space, with a minimum size of 10 gallons."
+        },
+                {
+            topic: "Plants",
+            text: "Plants encourage natural behavior from the fish, but will require light and nutrients."
+        },
+        {
+            topic: "Food",
+            text: "Research what type of food each fish requires. Feed your fish once a day, avoiding overfeeding."
+        },
+    ],
+
+    locations: [
+        {
+            name: "Great Barrier Reef",
+            country: "Australia",
+            description: "The Great Barrier Reef is the world's largest coral reef system, supporting a diverse array of marine life."
+        },
+        {
+            name: "Chesapeake Bay",
+            country: "United States",
+            description: "The largest estuary in the U.S., the Chesapeake Bay, is one of the biggest brackish water bays on the planet, creating a diverse habitat consisting of tidal pools, marshes and rivers."
+        },
+        {
+            name: "The Great African Seaforest",
+            country: "South Africa",
+            description: "The Great African Seaforest is home to the 'sequoias of the sea', housing sharks, abalone, lobsters, and the now famous academy award-winning octopus"
+        },
+
     ]
 }
