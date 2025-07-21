@@ -1,5 +1,20 @@
+body {
+    background-color: lightblue;
+}
+
 h1 {
     text-align: center;
+    background-color: green;
+    color: white;
+}
+
+.list-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: dotted, yellow;
+    padding: 1rem;
+
 }
 
 .fish {
@@ -16,7 +31,7 @@ h1 {
     transition: transform 0.3s ease;
 }
 
-.fish:hover {
+.fish:hover, .locations:hover, .fish__tips:hover {
     transform: translateY(-5px);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
@@ -32,7 +47,7 @@ h1 {
  flex-wrap: wrap;
  justify-content: center;
  gap: 20px;
- padding: 10px;
+ padding: 5px;
  float: left;
  width: 66%;
 }
@@ -42,6 +57,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     float: center;
+    padding-left: 3rem;
 }
 
 .fish__tips {
@@ -50,7 +66,7 @@ h1 {
     max-width: 400px;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -59,8 +75,31 @@ h1 {
     padding-left: -5px;
 }
 
-#locationList {
-    width: 66%;
+.locations {
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 20px;
     display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: lightgoldenrodyellow;
 }
 
+#locationList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+.fish__tips{
+    background-color: lightpink;
+}

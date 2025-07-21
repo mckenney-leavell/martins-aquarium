@@ -27,7 +27,7 @@ export const database = {
         {
             name: "Amy",
             species: "Rainbowfish",
-            length: 3,
+            length: 15,
             location: "Great Barrier Reef",
             diet: "Omnivore",
             image: "https://static.wixstatic.com/media/a24a53_a96c116b2d9b45fe817afafcbea97d7e~mv2.jpg/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a24a53_a96c116b2d9b45fe817afafcbea97d7e~mv2.jpg"
@@ -35,7 +35,7 @@ export const database = {
                 {
             name: "Sarah",
             species: "Starfish",
-            length: 5,
+            length: 4,
             location: "Great Barrier Reef",
             diet: "Omnivore",
             image: "https://i.guim.co.uk/img/media/a7934b611a8b0713a1c32e69a62877e76ed8c13a/0_319_5315_3189/master/5315.jpg?width=620&dpr=1&s=none&crop=none"
@@ -43,11 +43,83 @@ export const database = {
                 {
             name: "Skip",
             species: "Corydora",
-            length: 2,
+            length: 6,
             location: "Great Barrier Reef",
             diet: "Omnivore",
             image: "https://cdn.shopify.com/s/files/1/0311/3149/files/corydoras_sterbai.jpg?v=1605035087"
         },
+        {
+    name: "Flounder",
+    species: "Atlantic Flounder",
+    length: 12, // divisible by 3
+    location: "Atlantic Ocean",
+    diet: "Carnivore",
+    image: "https://example.com/images/flounder.jpg"
+  },
+  {
+    name: "Sebastian",
+    species: "Red Crab",
+    length: 7,
+    location: "Caribbean Sea",
+    diet: "Omnivore",
+    image: "https://example.com/images/sebastian.jpg"
+  },
+  {
+    name: "Ariel",
+    species: "Mermaid Fish",
+    length: 20, // divisible by 5
+    location: "Atlantica",
+    diet: "Omnivore",
+    image: "https://example.com/images/ariel.jpg"
+  },
+  {
+    name: "Oscar",
+    species: "Tiger Oscar",
+    length: 9, // divisible by 3
+    location: "Amazon River",
+    diet: "Carnivore",
+    image: "https://example.com/images/oscar.jpg"
+  },
+  {
+    name: "Angel",
+    species: "Angelfish",
+    length: 10, // divisible by 5
+    location: "Amazon Basin",
+    diet: "Omnivore",
+    image: "https://example.com/images/angel.jpg"
+  },
+  {
+    name: "Rainbow",
+    species: "Rainbow Trout",
+    length: 14,
+    location: "Rocky Mountains",
+    diet: "Carnivore",
+    image: "https://example.com/images/rainbow.jpg"
+  },
+  {
+    name: "Goldie",
+    species: "Goldfish",
+    length: 18, // divisible by 3
+    location: "Pet Store Tank",
+    diet: "Omnivore",
+    image: "https://example.com/images/goldie.jpg"
+  },
+  {
+    name: "Spike",
+    species: "Pufferfish",
+    length: 25, // divisible by 5
+    location: "Red Sea",
+    diet: "Carnivore",
+    image: "https://example.com/images/spike.jpg"
+  },
+  {
+    name: "Luna",
+    species: "Moonfish",
+    length: 11,
+    location: "Mediterranean Sea",
+    diet: "Planktivore",
+    image: "https://example.com/images/luna.jpg"
+  }
     ],
 
     tips: [
@@ -88,3 +160,5 @@ export const database = {
 
     ]
 }
+
+export const fishData = structuredClone(database.fish);

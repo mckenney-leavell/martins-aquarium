@@ -2,7 +2,7 @@ import { database } from './aquariumData.js';
 
 export const fishList = () => {
     // Generate an HTML representation of each fish
-    let fishHTML = ``;
+    let fishHTML = `<h2 class="list-header">Fish</h2>`;
     for (const fish of database.fish) {
         fishHTML += `
             <article class="fish">
