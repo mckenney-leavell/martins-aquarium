@@ -1,14 +1,14 @@
-import { fishData } from "./aquariumData"
+import { fishData } from './aquariumData.js'
 
 
 //display fish that have length divisible by 3
 export const mostHolyFish = () => {
     // 3, 6, 9, 12, etc... fish
-    const holyFish = ""
-    // iterate through fishData
+    let holyFish = `<h2 class=list-header>Fish</h2>`
+    // iterate through fishData.fish
     for (const fish of fishData) {
         //find fish with length that is divisible by 3
-        if (fish.length % 3) {
+        if (fish.length % 3 === 0) {
             // use HTML from fish list module and push into holyFish string
             holyFish += `
             <article class="fish">
@@ -30,11 +30,11 @@ export const mostHolyFish = () => {
 //display fish that have length divisible by 5
 export const soldierFish = () => {
     // 5, 10, 15, 20, 25, etc... fish
-    const swordFish = ""
-    // iterate through fishData
+    let swordFish = ""
+    // iterate through fishData.fish
     for (const fish of fishData) {
         //find fish with length that is divisible by 5
-        if (fish.length % 5) {
+        if (fish.length % 5 === 0) {
             // use HTML from fish list module and push into swordFish string
             swordFish += `
             <article class="fish">
@@ -56,11 +56,11 @@ export const soldierFish = () => {
 //display all other fish
 export const regularFish = () => {
     // Any fish not a multiple of 3 or 5
-        const otherFish = ""
-    // iterate through fishData
+        let otherFish = ""
+    // iterate through fishData.fish
     for (const fish of fishData) {
-            // use HTML from fish list module and push into otherFish string without conditions
-            otherFishFish += `
+            if (fish.length % 5 !== 0) && (fish.length % 3 !== 0) {
+            otherFish += `
             <article class="fish">
                 <img src="${fish.image}" alt="${fish.image} poster" class="fish__image">
                     <div class="fish__details">
@@ -71,6 +71,7 @@ export const regularFish = () => {
                </div>
             </article>   
         `
+            }
         }
     
     return otherFish

@@ -119,7 +119,7 @@ export const database = {
     location: "Mediterranean Sea",
     diet: "Planktivore",
     image: "https://example.com/images/luna.jpg"
-  }
+  },
     ],
 
     tips: [

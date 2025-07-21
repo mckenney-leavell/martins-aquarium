@@ -27,7 +27,7 @@ const unworthyFishHTML = regularFish();
 
 const allFish = holyFishHTML + swordFishHTML + unworthyFishHTML
 
-const fishContainer = document.querySelector("#fishList")
+const fishContainer = document.getElementById('fishList')
 
 
 //update the DOM with the 3 HTML strings. Can use interpolation for this -- domReference.innerHTML = `${string1}${string2}${string3}`
