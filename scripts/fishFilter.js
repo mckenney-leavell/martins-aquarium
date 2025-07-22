@@ -59,7 +59,7 @@ export const regularFish = () => {
         let otherFish = ""
     // iterate through fishData.fish
     for (const fish of fishData) {
-            if (fish.length % 5 !== 0) && (fish.length % 3 !== 0) {
+            if (fish.length % 5 !== 0 && fish.length % 3 !== 0) {
             otherFish += `
             <article class="fish">
                 <img src="${fish.image}" alt="${fish.image} poster" class="fish__image">

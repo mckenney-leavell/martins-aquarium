@@ -27,7 +27,7 @@ export const database = {
         {
             name: "Amy",
             species: "Rainbowfish",
-            length: 15,
+            length: 16,
             location: "Great Barrier Reef",
             diet: "Omnivore",
             image: "https://static.wixstatic.com/media/a24a53_a96c116b2d9b45fe817afafcbea97d7e~mv2.jpg/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a24a53_a96c116b2d9b45fe817afafcbea97d7e~mv2.jpg"
